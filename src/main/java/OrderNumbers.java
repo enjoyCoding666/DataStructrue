@@ -15,4 +15,12 @@ public class OrderNumbers {
         }
     }
 
+    public void swap(int number1,int number2){
+
+    }
+
+    //交换字符串，理解 值传递和引用传递
+    public void  swapString(String str1,String str2) {
+
+    }
 }
