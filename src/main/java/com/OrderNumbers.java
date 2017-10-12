@@ -1,3 +1,5 @@
+package com;
+
 /**
  * Created by Administrator on 2017/10/10.
  */
@@ -16,7 +18,10 @@ public class OrderNumbers {
     }
 
     public void swap(int number1,int number2){
-
+         int temp=number1;
+         number1=number2;
+         number2=temp;
+        System.out.println(number1+","+number2);
     }
 
     //交换字符串，理解 值传递和引用传递
