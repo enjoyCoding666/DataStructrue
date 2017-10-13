@@ -3,7 +3,11 @@ package test.com;
 import com.OrderNumbers;
 import org.junit.Test;
 import org.junit.Before; 
-import org.junit.After; 
+import org.junit.After;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 /** 
 * OrderNumbers Tester. 
@@ -51,7 +55,6 @@ public void testPrintOrderNumbers() throws Exception {
 @Test
 public void testSwap() throws Exception { 
 //TODO: Test goes here...
-    orderNumbers.swap(1,2);
 } 
 
 /** 
@@ -61,8 +64,14 @@ public void testSwap() throws Exception {
 */ 
 @Test
 public void testSwapString() throws Exception { 
-//TODO: Test goes here... 
-} 
+//TODO: Test goes here...
+    String str1="str1";
+    String str2="str2";
+    String temp=str1;
+    str1=str2;
+    str2=temp;
+    System.out.println(str1+","+str2);
+}
 
 
 } 

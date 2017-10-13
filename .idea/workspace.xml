@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8171f20f-d9aa-40db-af38-388b988af6aa" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/OrderNumbers.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/OrderNumbersTest.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/OrderNumbers.java" afterPath="$PROJECT_DIR$/src/main/java/com/OrderNumbers.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/OrderNumbers.java" afterPath="$PROJECT_DIR$/src/main/java/com/OrderNumbers.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/test/com/OrderNumbersTest.java" afterPath="$PROJECT_DIR$/src/main/java/test/com/OrderNumbersTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -38,22 +34,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OrderNumbers.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="OrderNumbers.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/OrderNumbers.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="15" column="26" lean-forward="true" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
-              <folding />
+            <state relative-caret-position="603">
+              <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OrderNumbersTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="OrderNumbersTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/test/com/OrderNumbersTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="54" column="2" lean-forward="true" selection-start-line="54" selection-start-column="2" selection-end-line="54" selection-end-column="2" />
-              <folding />
+            <state relative-caret-position="-81">
+              <caret line="56" column="25" lean-forward="false" selection-start-line="56" selection-start-column="25" selection-end-line="56" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -83,8 +83,8 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/main/java/OrderNumbers.java" />
         <option value="$PROJECT_DIR$/src/main/java/test/OrderNumbersTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/OrderNumbers.java" />
         <option value="$PROJECT_DIR$/src/main/java/test/com/OrderNumbersTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/OrderNumbers.java" />
       </list>
     </option>
   </component>
@@ -254,7 +254,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.OrderNumbersTest.testSwap (1)">
+  <component name="RunManager" selected="JUnit.OrderNumbersTest.testSwapString">
     <configuration default="false" name="OrderNumbersTest.testPrintOrderNumbers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="dataStructrue" />
@@ -315,6 +315,32 @@
       <option name="PACKAGE_NAME" value="test.com" />
       <option name="MAIN_CLASS_NAME" value="test.com.OrderNumbersTest" />
       <option name="METHOD_NAME" value="testSwap" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="OrderNumbersTest.testSwapString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="test.com.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="dataStructrue" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="test.com" />
+      <option name="MAIN_CLASS_NAME" value="test.com.OrderNumbersTest" />
+      <option name="METHOD_NAME" value="testSwapString" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -708,16 +734,18 @@
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
       <method />
     </configuration>
-    <list size="3">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="JUnit.OrderNumbersTest.testPrintOrderNumbers" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.OrderNumbersTest.testSwap" />
       <item index="2" class="java.lang.String" itemvalue="JUnit.OrderNumbersTest.testSwap (1)" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.OrderNumbersTest.testSwapString" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.OrderNumbersTest.testSwap (1)" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.OrderNumbersTest.testSwap" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.OrderNumbersTest.testPrintOrderNumbers" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.OrderNumbersTest.testSwapString" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.OrderNumbersTest.testSwap (1)" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.OrderNumbersTest.testSwap" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.OrderNumbersTest.testPrintOrderNumbers" />
       </list>
     </recent_temporary>
   </component>
@@ -737,47 +765,47 @@
       <workItem from="1507724154568" duration="1317000" />
       <workItem from="1507736627260" duration="411000" />
       <workItem from="1507770818214" duration="1600000" />
-      <workItem from="1507772436292" duration="153000" />
+      <workItem from="1507772436292" duration="6411000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="OrderNumbersTest_testPrintOrderNumbers - 2017.10.10 at 22h 57m 21s.xml">
-      <configuration name="OrderNumbersTest.testPrintOrderNumbers" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="OrderNumbersTest_testPrintOrderNumbers - 2017.10.10 at 22h 57m 45s.xml">
-      <configuration name="OrderNumbersTest.testPrintOrderNumbers" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="OrderNumbersTest_testPrintOrderNumbers - 2017.10.10 at 23h 00m 49s.xml">
-      <configuration name="OrderNumbersTest.testPrintOrderNumbers" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="OrderNumbersTest_testPrintOrderNumbers - 2017.10.10 at 23h 08m 43s.xml">
-      <configuration name="OrderNumbersTest.testPrintOrderNumbers" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="OrderNumbersTest_testPrintOrderNumbers - 2017.10.10 at 23h 09m 13s.xml">
-      <configuration name="OrderNumbersTest.testPrintOrderNumbers" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="OrderNumbersTest_testPrintOrderNumbers - 2017.10.10 at 23h 11m 59s.xml">
-      <configuration name="OrderNumbersTest.testPrintOrderNumbers" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="OrderNumbersTest_testPrintOrderNumbers - 2017.10.10 at 23h 17m 08s.xml">
-      <configuration name="OrderNumbersTest.testPrintOrderNumbers" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="OrderNumbersTest_testPrintOrderNumbers - 2017.10.10 at 23h 17m 28s.xml">
-      <configuration name="OrderNumbersTest.testPrintOrderNumbers" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="OrderNumbersTest_testSwap - 2017.10.12 at 09h 20m 23s.xml">
       <configuration name="OrderNumbersTest.testSwap" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="OrderNumbersTest_testSwapString - 2017.10.12 at 10h 03m 21s.xml">
+      <configuration name="OrderNumbersTest.testSwapString" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="OrderNumbersTest_testSwapString - 2017.10.12 at 10h 04m 31s.xml">
+      <configuration name="OrderNumbersTest.testSwapString" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="OrderNumbersTest_testSwapString - 2017.10.12 at 11h 10m 32s.xml">
+      <configuration name="OrderNumbersTest.testSwapString" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="OrderNumbersTest_testSwapString - 2017.10.12 at 11h 11m 27s.xml">
+      <configuration name="OrderNumbersTest.testSwapString" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="OrderNumbersTest_testSwapString - 2017.10.12 at 11h 11m 41s.xml">
+      <configuration name="OrderNumbersTest.testSwapString" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="OrderNumbersTest_testSwapString - 2017.10.12 at 11h 12m 00s.xml">
+      <configuration name="OrderNumbersTest.testSwapString" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="OrderNumbersTest_testSwapString - 2017.10.12 at 11h 27m 25s.xml">
+      <configuration name="OrderNumbersTest.testSwapString" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="OrderNumbersTest_testSwapString - 2017.10.12 at 11h 27m 35s.xml">
+      <configuration name="OrderNumbersTest.testSwapString" configurationId="JUnit" />
     </history-entry>
     <history-entry file="OrderNumbersTest_testSwap_(1) - 2017.10.12 at 09h 42m 39s.xml">
       <configuration name="OrderNumbersTest.testSwap (1)" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7640000" />
+    <option name="totallyTimeSpent" value="13898000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-11" y="-11" width="1848" height="1094" extended-state="0" />
+    <frame x="-11" y="-11" width="1848" height="1094" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -789,13 +817,13 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.393736" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32997763" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27964205" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16407983" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2818792" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26136363" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22954546" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -814,12 +842,30 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="processedProjectFiles" value="true" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -840,7 +886,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="351">
           <caret line="13" column="21" lean-forward="true" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -864,7 +912,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -881,7 +931,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -898,7 +950,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
           <caret line="3" column="27" lean-forward="true" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -914,7 +968,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -930,15 +986,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
           <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="10" column="18" lean-forward="false" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -951,19 +1001,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/OrderNumbersTest.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/test/OrderNumbersTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/OrderNumbers.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="15" column="26" lean-forward="true" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+        <state relative-caret-position="270">
+          <caret line="10" column="18" lean-forward="false" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/test/com/OrderNumbersTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="54" column="2" lean-forward="true" selection-start-line="54" selection-start-column="2" selection-end-line="54" selection-end-column="2" />
-          <folding />
+        <state relative-caret-position="-81">
+          <caret line="56" column="25" lean-forward="false" selection-start-line="56" selection-start-column="25" selection-end-line="56" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/OrderNumbers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="603">
+          <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

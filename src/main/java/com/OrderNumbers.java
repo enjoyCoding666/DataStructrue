@@ -1,5 +1,9 @@
 package com;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 /**
  * Created by Administrator on 2017/10/10.
  */
@@ -17,15 +21,19 @@ public class OrderNumbers {
         }
     }
 
-    public void swap(int number1,int number2){
-         int temp=number1;
-         number1=number2;
-         number2=temp;
-        System.out.println(number1+","+number2);
-    }
 
-    //交换字符串，理解 值传递和引用传递
+    //交换字符串，理解 java是值传递的，而非引用传递。
+    // 调用该函数并不能实现交换实参，只能交换形参
     public void  swapString(String str1,String str2) {
 
+         String temp=str1;
+         str1=str2;
+         str2=temp;
+
+//        List<String> list=new ArrayList<String>();
+//        list.add(str1);
+//        list.add(str2);
+//        Collections.swap(list,0,1);
     }
+
 }
