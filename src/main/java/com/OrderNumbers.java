@@ -12,8 +12,11 @@ public class OrderNumbers {
 
     }
 
-    //递归处理，但是没有处理number<=0的情况，不够健壮
-    //当数量级太大，比如输入100000时，会导致栈溢出.
+    /**
+     * 递归处理，但是没有处理number<=0的情况，不够健壮
+     * 当数量级太大，比如输入100000时，会导致栈溢出.
+     * @param number
+     */
     public  void printOrderNumbers(int number){
         if(number>0){
             printOrderNumbers(number-1);
@@ -21,9 +24,13 @@ public class OrderNumbers {
         }
     }
 
+    /**
+     *  交换字符串，理解 java是值传递的，而非引用传递。
+     *  调用该函数并不能实现交换实参，只能交换形参
+     * @param str1
+     * @param str2
+     */
 
-    //交换字符串，理解 java是值传递的，而非引用传递。
-    // 调用该函数并不能实现交换实参，只能交换形参
     public void  swapString(String str1,String str2) {
 
          String temp=str1;
