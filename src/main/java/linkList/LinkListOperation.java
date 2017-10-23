@@ -24,12 +24,46 @@ public class LinkListOperation {
         return false;
     }
 
-    public void insertNode(Node node,Node node0){
-
+    /**
+     *
+     * @param node 链表头
+     * @param node1 在何处后面插入节点
+     * @param node2 要插入的节点
+     * @return 插入后生成的链表
+     */
+    public Node insertNode(Node node,Node node1,Node node2){
+        Node node0=node;
+        while (node!=null) {
+             if(node ==node1){
+                     Node node3=node1.getNext();
+                     node2.setNext(node3);
+                     node.setNext(node2);
+                     break;
+             }
+             node=node.getNext();
+        }
+        return node0;
     }
 
-    public void updateNode(){
-
+    /**
+     *
+     * @param node   链表头
+     * @param node1   要修改的节点
+     * @param node2   修改后的节点
+     * @return   更新完成后的链表头
+     */
+    public Node updateNode(Node node,Node node1,Node node2){
+        Node node0=node;
+        while (node!=null) {
+            if(node.getNext()==node1) {
+               Node node3=node1.getNext();
+               node2.setNext(node3);
+               node.setNext(node2);
+               break;
+            }
+            node=node.getNext();
+        }
+        return node0;
     }
 
     /**
@@ -37,11 +71,14 @@ public class LinkListOperation {
      * @param nodeRemoved   要删掉的node
      * @param node  链表头
      *  如果需要移除的node是链表头或者链表尾，要仔细考虑细节
-     *  如果要删除的是链表头，以下方法不可行
+     *  如果链表只有一个节点，也要注意
      */
-    public void removeNode(Node nodeRemoved,Node node){
-            if(nodeRemoved==node) {
-              node.setNext(null);
+    public Node removeNode(Node nodeRemoved,Node node){
+            Node node0=node;
+            if(nodeRemoved==node0) {
+                Node node1=node.getNext();
+                node.setNext(null);
+                return  node1;
             }
             Node next=nodeRemoved.getNext();
             while (node!=null) {
@@ -51,6 +88,7 @@ public class LinkListOperation {
                 }
                 node=node.getNext();
             }
+            return node0;
     }
 
     /**

@@ -15,4 +15,13 @@ public class NodeExample {
 
         return node0;
     }
+
+    /**
+     * 初始化只有一个节点的链表
+     * @return
+     */
+    public Node initialOneNode(){
+        Node node=new Node (0,null);
+        return node;
+    }
 }
