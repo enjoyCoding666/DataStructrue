@@ -98,4 +98,10 @@ public void testRemoveNode() throws Exception {
 public  void testListNode() throws Exception{
     linkListOperation.listNode( node0 );
 }
+
+@Test
+public void testFindKthNode() throws Exception{
+    Node node=linkListOperation.findKthNode(node0,4);
+    System.out.println(node.getElement());
+ }
 } 

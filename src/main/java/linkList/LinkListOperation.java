@@ -101,4 +101,19 @@ public class LinkListOperation {
                node=node.getNext();
            }
     }
+
+    /**
+     *
+     * @param node  链表头
+     * @param k     正整数序号
+     * @return      链表第k个节点
+     */
+    public Node findKthNode(Node node,int k){
+        int i=0;
+        while (node!=null && i!=k){
+            node=node.getNext();
+            i++;
+        }
+        return node;
+    }
 }
