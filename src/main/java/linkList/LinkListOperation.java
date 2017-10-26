@@ -109,6 +109,10 @@ public class LinkListOperation {
      * @return      链表第k个节点
      */
     public Node findKthNode(Node node,int k){
+        if(k<0) {
+            System.out.println("节点序号不能小于零.");
+            return null;
+        }
         int i=0;
         while (node!=null && i!=k){
             node=node.getNext();
