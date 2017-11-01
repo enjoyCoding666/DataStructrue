@@ -25,6 +25,10 @@ public class Node {
         this.element = element;
     }
 
+    public  int getIntElement() {
+        return  Integer.parseInt( String.valueOf( element ) );
+    }
+
     public Node(Object element){
         this.element=element;
     }

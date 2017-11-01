@@ -3,7 +3,7 @@ package linkList;
 import java.util.List;
 
 /**
- *  @author lin
+*  @author l!in
  *  链表的相关操作
  **/
 public class LinkListOperation {
