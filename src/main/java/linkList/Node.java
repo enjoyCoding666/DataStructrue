@@ -5,8 +5,8 @@ package linkList;
  *  自定义链表
  **/
 public class Node {
-     Node next;    //存放下一个节点
-     Object element;   //存放元素
+     Node next;
+     Object element;
 
 
     public Node getNext() {

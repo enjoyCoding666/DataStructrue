@@ -5,6 +5,10 @@ package linkList;
  * @author lin
  */
 public class NodeExample {
+    /**
+     * 初始化一个链表，各节点存放元素为0到5
+     * @return
+     */
     public Node initial(){
         Node node5=new Node(5,null);
         Node node4=new Node(4,node5);
