@@ -34,7 +34,7 @@ public class LinkListOperation {
     public Node insertNode(Node node,Node node1,Node node2){
         Node node0=node;
         while (node!=null) {
-             if(node ==node1){
+             if(node .equals(node1)){
                      Node node3=node1.getNext();
                      node2.setNext(node3);
                      node.setNext(node2);
@@ -55,7 +55,7 @@ public class LinkListOperation {
     public Node updateNode(Node node,Node node1,Node node2){
         Node node0=node;
         while (node!=null) {
-            if(node.getNext()==node1) {
+            if(node.getNext().equals(node1)) {
                Node node3=node1.getNext();
                node2.setNext(node3);
                node.setNext(node2);
@@ -75,14 +75,14 @@ public class LinkListOperation {
      */
     public Node removeNode(Node nodeRemoved,Node node){
             Node node0=node;
-            if(nodeRemoved==node0) {
+            if(nodeRemoved.equals(node0)) {
                 Node node1=node.getNext();
                 node.setNext(null);
                 return  node1;
             }
             Node next=nodeRemoved.getNext();
             while (node!=null) {
-                if(node.getNext() == nodeRemoved ) {
+                if(node.getNext() .equals(nodeRemoved)  ) {
                     node.setNext(next);
                     break;
                 }

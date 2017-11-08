@@ -26,4 +26,26 @@ public class Queue {
     public void setRearNode(Node rearNode) {
         this.rearNode = rearNode;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Queue queue = (Queue) o;
+
+        return new org.apache.commons.lang3.builder.EqualsBuilder()
+                .append(frontNode, queue.frontNode)
+                .append(rearNode, queue.rearNode)
+                .isEquals();
+    }
+
+    @Override
+    public int hashCode() {
+        return new org.apache.commons.lang3.builder.HashCodeBuilder(17, 37)
+                .append(frontNode)
+                .append(rearNode)
+                .toHashCode();
+    }
 }

@@ -16,6 +16,10 @@ public class QueueOperation {
 
     public Queue deQueue(Queue queue){
         Node frontNode=queue.getFrontNode();
+        Node rearNode=queue.getRearNode();
+        if(  (frontNode.equals(rearNode))   || frontNode==null || rearNode==null ) {
+              return null;
+        }
         Node node=frontNode.getNext();
         frontNode.setNext(null);
         queue.setFrontNode(node);
