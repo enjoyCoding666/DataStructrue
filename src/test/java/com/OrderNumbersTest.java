@@ -1,13 +1,8 @@
-package test.com; 
+package com;
 
-import com.OrderNumbers;
 import org.junit.Test;
 import org.junit.Before; 
 import org.junit.After;
-
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
 
 /** 
 * OrderNumbers Tester. 

@@ -1,9 +1,8 @@
-package test.stack; 
+package stack;
 
 import org.junit.Test; 
 import org.junit.Before; 
 import org.junit.After;
-import stack.StackDemo;
 
 import java.util.Stack;
 

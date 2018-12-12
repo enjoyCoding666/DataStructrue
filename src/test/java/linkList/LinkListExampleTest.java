@@ -1,12 +1,8 @@
-package test.linkList; 
+package linkList;
 
-import linkList.LinkListExample;
-import linkList.LinkListOperation;
-import linkList.Node;
-import linkList.NodeExample;
 import org.junit.Test;
-import org.junit.Before; 
-import org.junit.After; 
+import org.junit.Before;
+import org.junit.After;
 
 /** 
 * LinkListExample Tester. 
