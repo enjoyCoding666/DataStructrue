@@ -16,29 +16,23 @@ public class BinaryFind {
           if(sortedArray==null)  {
               throw new IllegalArgumentException();
           }
-          int size=sortedArray.length;
-          int mid=size;
-          boolean isNofound=true;
-          //没找到对应的数据，就一直循环查找
-          while (isNofound) {
-              //根据数组长度为奇数/偶数，分情况先找到中间的元素
-              if(size%2==1) {
-                  mid=(size-1)/2;
-              } else {
-                  mid=size/2;
-              }
+          int last=sortedArray.length-1;
+          int start=0;
 
-              //如果中间的元素大于指定的数，就取左半边。
-              if(sortedArray[mid]>number) {
-                  mid=mid/2;
-              }else if(sortedArray[mid]<number){
-                  mid=mid/2*3;
-              }else {
-                  isNofound=false;
-              }
+          //没找到对应的数据，就一直循环查找
+          while ( start<= last ) {
+              //先找到中间的元素的下标 ， mid是首尾下标的和的一半
+               int mid= (start+last)/2 ;
+               if( sortedArray[mid] > number   ) {
+                   last=mid-1;
+               }else if(sortedArray[mid] <number ){
+                   start=mid+1;
+               }else {
+                   return  mid;
+               }
 
           }
-         return  mid;
+         return  -1;
 
     }
 

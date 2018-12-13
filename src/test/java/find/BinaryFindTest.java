@@ -34,7 +34,7 @@ public void after() throws Exception {
 @Test
 public void testFind() throws Exception { 
 //TODO: Test goes here...
-        int index=  binaryFind.find(sortedArray,number);
+        int index=  binaryFind.find(sortedArray2,number);
 
         Assert.assertEquals(1,index);
 }
